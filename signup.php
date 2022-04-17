@@ -76,6 +76,8 @@
 include("header.php");
 ?>
     <table width="80%" border="0"  style="text-align: center">
+      
+    <tr><div align="right"><strong><a href="index.php"> Home </a></strong></div></tr>
         <tr>
             <td width="132" rowspan="2" valign="top"><span class="style8"><img src="images/connected_multiple_big.jpg"
                         width="131" height="155"></span></td>
