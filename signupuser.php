@@ -7,8 +7,18 @@
 </head>
 
 <body>
+
 <?php
-include("header.php");
+include("header.php")
+?>
+
+
+<table width="80%" border="0"  style="text-align: center">
+      
+    <tr><div align="right"><strong><a href="signup.php"> Back </a></strong></div></tr>
+</table>
+
+<?php
 extract($_POST);
 include("database.php");
 $rs=mysqli_query($con,"select * from mst_user where login='$lid'");
