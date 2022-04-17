@@ -121,9 +121,7 @@ echo "<h2 class='text-center bg-info'>Welcome to Online  Competitive Exam based 
                     </table>
 
 
-                    <div align="center">
-                        <p class="style5"><img src="images/topleft.jpg" width="134" height="128"> </p>
-                    </div>
+                   
                     </form>
                     </td>
                 </tr>
