@@ -69,7 +69,8 @@ echo "<h2 class='text-center bg-info'>Welcome to Online  Competitive Exam based 
                             <param name="BGCOLOR" value="#FFFFFF">
                             <p align="left" class="style5">&nbsp;</p>
                             <blockquote>
-                                <p1 align="left" class="style5"><span class="style7">There are a lot of competitive
+                                
+                                <p1 align="left" class="style4"><span class="style5">There are a lot of competitive
                                         based
                                         examination in now a days .This Site will provide the MCQ for various subject
                                         
@@ -118,6 +119,9 @@ echo "<h2 class='text-center bg-info'>Welcome to Online  Competitive Exam based 
                                 <a class="btn btn-success " href="signup.php">if you are New user ? Please click
                                     here</a>
                             </th>
+
+
+
                     </table>
 
 
