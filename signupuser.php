@@ -17,6 +17,22 @@ if (mysqli_num_rows($rs)>0)
 	echo "<br><br><br><div class=head1>Login Id Already Exists</div>";
 	exit;
 }
+
+$rs=mysqli_query($con,"select * from mst_user where email='$email'");
+if (mysqli_num_rows($rs)>0)
+{
+	echo "<br><br><br><div class=head1>Email  Already Exists</div>";
+	exit;
+}
+
+
+$rs=mysqli_query($con,"select * from mst_user where phone='$phone'");
+if (mysqli_num_rows($rs)>0)
+{
+	echo "<br><br><br><div class=head1>Phone number  Already Exists</div>";
+	exit;
+}
+
 $query="insert into mst_user(user_id,login,pass,username,address,city,phone,email) values('$uid','$lid','$pass','$name','$address','$city','$phone','$email')";
 $rs=mysqli_query($con,$query)or die("Could Not Perform the Query");
 echo "<br><br><br><div class=head1>Your Login ID  $lid Created Sucessfully</div>";
