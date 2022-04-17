@@ -24,14 +24,16 @@ if(!isset($_SESSION[sid]) || !isset($_SESSION[tid]))
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<title>Online Quiz</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="quiz.css" rel="stylesheet" type="text/css">
+    <title>Online Quiz</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="quiz.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-<?php
+    <?php
 include("header.php");
 
 
@@ -104,12 +106,34 @@ echo "<tr><td class=style8><input type=radio name=ans value=1>$row[3]";
 echo "<tr><td class=style8> <input type=radio name=ans value=2>$row[4]";
 echo "<tr><td class=style8><input type=radio name=ans value=3>$row[5]";
 echo "<tr><td class=style8><input type=radio name=ans value=4>$row[6]";
+echo "<tr><td class=style8><input type=radio name=ans value=4>$row[7]";
+
+$index = $row[7];
+$ans = $row[$index];
 
 if($_SESSION[qn]<mysqli_num_rows($rs)-1)
+{
 echo "<tr><td><input type=submit name=submit value='Next Question'></form>";
-else
+echo "<tr><td><a href='#' onclick=\"showanswer('$ans')\"> Show Answer </a>";
+} else {
 echo "<tr><td><input type=submit name=submit value='Get Result'></form>";
+}
+echo "<tr><td><div id='answer'> </div>";
 echo "</table></table>";
 ?>
+
+<script>
+
+	function  showanswer($qn)
+	{
+
+		$("#answer").html($qn)
+    
+	}
+
+	</script>
+	
+
 </body>
+
 </html>
