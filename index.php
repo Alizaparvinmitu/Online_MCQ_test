@@ -72,11 +72,10 @@ echo "<h2 class='text-center bg-info'>Welcome to Online  Competitive Exam based 
                                 <p1 align="left" class="style5"><span class="style7">There are a lot of competitive
                                         based
                                         examination in now a days .This Site will provide the MCQ for various subject
-                                        based on
-                                        the Competitive Exam of interest.
+                                        
+                                        based on   the Competitive Exam of interest.
                                         You need to login for the take the online exam.this will help you to developing
-                                        your
-                                        performance</span></p1>
+                                        your  performance</span></p1>
                             </blockquote>
                         </div>
                     </td>
