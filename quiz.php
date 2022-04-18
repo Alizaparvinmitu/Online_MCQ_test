@@ -102,19 +102,19 @@ echo "<form name=myfm method=post action=quiz.php>";
 echo "<table width=100%> <tr> <td width=30>&nbsp;<td> <table border=0>";
 $n=$_SESSION[qn]+1;
 echo "<tR><td><span class=style2>Que ".  $n .": $row[2]</style>";
-echo "<tr><td class=style8><input type=radio name=ans value=1>$row[3]";
-echo "<tr><td class=style8> <input type=radio name=ans value=2>$row[4]";
-echo "<tr><td class=style8><input type=radio name=ans value=3>$row[5]";
-echo "<tr><td class=style8><input type=radio name=ans value=4>$row[6]";
+echo "<tr><td class=style8><input type=radio name=ans value=3>$row[3]";
+echo "<tr><td class=style8> <input type=radio name=ans value=4>$row[4]";
+echo "<tr><td class=style8><input type=radio name=ans value=5>$row[5]";
+echo "<tr><td class=style8><input type=radio name=ans value=6>$row[6]";
 
 
-$index = $row[7];
-$ans = $row[$index];
+$ansindex = $row[7];
+$showans = $row[$ansindex];
 
 if($_SESSION[qn]<mysqli_num_rows($rs)-1)
 {
 echo "<tr><td><input type=submit name=submit value='Next Question'></form>";
-echo "<tr><td><a href='#' onclick=\"showanswer('$ans')\"> Show Answer </a>";
+echo "<tr><td><a href='#' onclick=\"showanswer('$showans')\"> Show Answer </a>";
 } else {
 echo "<tr><td><input type=submit name=submit value='Get Result'></form>";
 }
@@ -124,10 +124,10 @@ echo "</table></table>";
 
 <script>
 
-	function  showanswer($qn)
+	function  showanswer($showans)
 	{
 
-		$("#answer").html($qn)
+		$("#answer").html($showans)
     
 	}
 
