@@ -71,6 +71,7 @@ echo "<h2 class='text-center bg-info'>Welcome to Online  Competitive Exam based 
                             <blockquote>
                                 
                                 <p1 align="left" class="style4"><span class="style5">There are a lot of competitive
+                                    
                                         based
                                         examination in now a days .This Site will provide the MCQ for various subject
                                         

@@ -106,7 +106,7 @@ echo "<tr><td class=style8><input type=radio name=ans value=1>$row[3]";
 echo "<tr><td class=style8> <input type=radio name=ans value=2>$row[4]";
 echo "<tr><td class=style8><input type=radio name=ans value=3>$row[5]";
 echo "<tr><td class=style8><input type=radio name=ans value=4>$row[6]";
-echo "<tr><td class=style8><input type=radio name=ans value=4>$row[7]";
+
 
 $index = $row[7];
 $ans = $row[$index];
